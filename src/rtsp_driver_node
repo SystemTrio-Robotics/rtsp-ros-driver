@@ -12,7 +12,7 @@ from threading import Thread
 from time import sleep
 
 
-verbose = True
+verbose = False
 camera_frame = ''
 camera_info_manager = None
 camera_info_publisher = None
