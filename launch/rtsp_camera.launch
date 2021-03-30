@@ -4,7 +4,7 @@
     <arg name="camera_frame" default="rtsp_camera_link" />
     <arg name="image_raw_topic" default="image_raw" />
     <arg name="camera_info_topic" default="camera_info" />
-    <arg name="calibration_file" default="/home/catkin_ws/src/surveillance_system/config/rtsp_camera.yaml" />
+    <arg name="calibration_file" default="file:///home/xaviernx/catkin_ws/src/surveillance_system/config/rtsp_camera.yaml" />
 
     <!-- RTSP camera info -->
     <arg name="hostname" default="10.42.0.10" doc="hostname or IP of the rtsp camera" />

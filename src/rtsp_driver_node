@@ -64,8 +64,8 @@ if __name__ == '__main__':
     ros_cv_bridge = CvBridge()
 
     # initialize Camera Info Manager
-    camera_info_manager = CameraInfoManager(cname=camera_name, namespace=camera_name)
-    camera_info_manager.loadCameraInfo(calibration_file)
+    camera_info_manager = CameraInfoManager(cname=camera_name, url=calibration_file,  namespace=camera_name)
+    camera_info_manager.loadCameraInfo()
     if not camera_info_manager.isCalibrated():
         rospy.logwarn("No calibration found for the current camera")
 
